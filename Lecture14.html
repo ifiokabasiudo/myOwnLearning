@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Combining Selectors</title>
+
+        <style>
+            .highlight{
+                background-color: green;
+            }
+            p.highlight{
+                font-style: italic;
+            }
+            .highlight.mainPoint{
+                color: red;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Main Heading</h1>
+        <p>The first paragraph that's supposed to have lots of info but 
+            as one would have it, things don't actually go the way you 
+            want so one just has to improvise most of the time and hope things 
+            work out. I guess at this point I'm just ranting aren't I.
+        </p>
+        <p class = "highlight">
+            This be the one that I specified for changes with the css. So it should 
+            be different from the first one if things should go well.
+        </p>
+        <h2>Subheading</h2>
+        <span class="highlight">This shit should turn green and nothing else</span>
+        <div><span class="highlight mainPoint">Right now I think I'm just 
+            experimenting. But las las it should look like something that ads coke.
+        </span></div>
+    </body>
+</html>
