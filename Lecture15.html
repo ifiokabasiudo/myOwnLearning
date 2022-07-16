@@ -5,10 +5,38 @@
         <title>Pseudo class selectors</title>
 
         <style>
+        header a{
+            list-style: none;
+        }
+        a:link, a:visited{
+            text-decoration: none;
+            background-color: gray;
+            border: 1px solid cyan;
+            color: darkorange;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 2px;
+        }
+        a:hover, a:active{
+            background-color: red;
+            color: purple;
+        }
+        header li:nth-child(3){
+            font-style: italic;
+        }
+        section div:nth-child(odd){
+            background-color: grey;
+        }
+        section div:nth-child(4):hover{
+            background-color: greenyellow;
+            cursor: pointer;
+        }
 
         </style>
     </head>
     <body>
+        <header>
         <ul>
             <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
                 Udemy bootcamp
@@ -16,7 +44,9 @@
             <li><a href="https://www.instagram.com/">instgram handle</a></li>
             <li><a href="https://en.savefrom.net/176/">Savefrom</a></li>
         </ul>
-
+        </header>
+        
+        <section>
         <div>DIV 1</div>
         <div>DIV 2</div>
         <div>DIV 3</div>
@@ -36,7 +66,8 @@
         <div>DIV 17</div>
         <div>DIV 18</div>
         <div>DIV 19</div>
-        <div>DIV 20</div>            
+        <div>DIV 20</div>
+        </section>            
     </body>
 
 </html>
